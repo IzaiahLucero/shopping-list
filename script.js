@@ -44,7 +44,7 @@ function createListItemHtml(itemName, itemAmount, id) {
     return `
         <li id="item${id}"> 
             ${itemName} - ${itemAmount} 
-            <button id="button${id} "type="button">Delete Item</button>
+            <button id="button${id}" type="button">Delete Item</button>
         </li>`;
 }
 
@@ -56,5 +56,5 @@ function removelistTtem (id) {
 function getRandomInt(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
-    return Math.floor(Math.round() * (max - min)) + min;
+    return Math.floor(Math.random() * (max - min)) + min;
 }
